@@ -133,7 +133,135 @@ table {
 html,
 body {
   height: 100%;
+  font-family: 'Titillium Web', sans-serif;
 }
-html {
-  background: green;
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+.container header {
+  width: 100%;
+  display: flex;
+  margin-bottom: 25px;
+}
+.container nav {
+  width: 100%;
+  margin-top: 40px;
+  margin-left: 55%;
+  display: flex;
+  justify-content: space-between;
+}
+.container nav a {
+  width: 100%;
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: black;
+  font-weight: bold;
+}
+.container nav a:hover {
+  text-decoration: underline;
+  color: lightskyblue;
+}
+.post-header {
+  background-color: #5892ef;
+  width: 100%;
+  height: 100px;
+}
+.post-header h1 {
+  color: white;
+  font-size: 4.5rem;
+  text-align: center;
+  letter-spacing: 12px;
+  font-weight: initial;
+  text-shadow: 4px 3px 0px black, 9px 8px 0px rgba(0, 0, 0, 0.15);
+}
+.main-content {
+  margin-top: 25px;
+}
+.main-content .top-content {
+  display: block;
+  text-align: end;
+}
+.main-content .top-content .selfie {
+  float: left;
+  width: 200px;
+  height: auto;
+}
+.main-content .top-content .text-content h1 {
+  font-size: 2.5rem;
+  color: #5892ef;
+  font-weight: bold;
+}
+.main-content .top-content .text-content h2 {
+  margin-top: 25px;
+  font-size: 1.3rem;
+  color: gray;
+  letter-spacing: 5px;
+  font-weight: lighter;
+}
+.main-content .downtown-sc-pic {
+  max-width: 100%;
+  width: 100%;
+  height: 300px;
+  margin-top: 50px;
+}
+.middle-content {
+  margin-top: 20px;
+  background: #5892ef;
+  max-width: 100%;
+  height: 230px;
+}
+.middle-content h1 {
+  color: white;
+  font-size: 4.5rem;
+  text-align: center;
+  letter-spacing: 12px;
+  font-weight: initial;
+  text-shadow: 4px 3px 0px black, 9px 8px 0px rgba(0, 0, 0, 0.15);
+}
+.middle-content .text-box {
+  background: #8ab4f7;
+  padding: 0 5%;
+  margin: 25px 3% 15px 3%;
+  box-shadow: 3px 4px;
+}
+.middle-content .text-box p {
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+  line-height: 1.8;
+}
+.bottom-content {
+  display: block;
+}
+.bottom-content h2 {
+  letter-spacing: 5px;
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+}
+.bottom-content ul {
+  margin-left: 5%;
+  list-style: square;
+  font-size: 1.2rem;
+}
+.contact {
+  margin: 50px 0 0 5%;
+}
+.contact h4 {
+  font-size: 1.3rem;
+  letter-spacing: 4px;
+}
+.contact p {
+  padding: 5px 0;
+  letter-spacing: 2px;
+}
+footer {
+  color: white;
+  font-size: 0.8rem;
+  width: 100%;
+  height: 40px;
+  background: black;
+  margin-top: 50px;
+  padding-top: 20px;
+  text-align: center;
 }
