@@ -151,12 +151,28 @@ body {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .container nav {
+    max-width: 500px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .container nav a {
   width: 100%;
   text-decoration: none;
   font-size: 1.3rem;
   color: black;
   font-weight: bold;
+}
+@media (max-width: 500px) {
+  .container nav a {
+    padding-bottom: 20px;
+    font-size: 2.5rem;
+  }
 }
 .container nav a:hover {
   text-decoration: underline;
@@ -167,6 +183,12 @@ body {
   width: 100%;
   height: 100px;
 }
+@media (max-width: 500px) {
+  .post-header {
+    align-items: center;
+    max-width: 500px;
+  }
+}
 .post-header h1 {
   color: white;
   font-size: 4.5rem;
@@ -175,8 +197,18 @@ body {
   font-weight: initial;
   text-shadow: 4px 3px 0px black, 9px 8px 0px rgba(0, 0, 0, 0.15);
 }
+@media (max-width: 500px) {
+  .post-header h1 {
+    font-size: 3rem;
+  }
+}
 .main-content {
   margin-top: 25px;
+}
+@media (max-width: 500px) {
+  .main-content {
+    width: 500px;
+  }
 }
 .main-content .top-content {
   display: block;
@@ -187,10 +219,22 @@ body {
   width: 200px;
   height: auto;
 }
+@media (max-width: 500px) {
+  .main-content .top-content .selfie {
+    height: auto;
+    width: 150px;
+  }
+}
 .main-content .top-content .text-content h1 {
   font-size: 2.5rem;
   color: #5892ef;
   font-weight: bold;
+}
+@media (max-width: 500px) {
+  .main-content .top-content .text-content h1 {
+    font-size: 1.5rem;
+    margin-right: 10%;
+  }
 }
 .main-content .top-content .text-content h2 {
   margin-top: 25px;
@@ -199,11 +243,23 @@ body {
   letter-spacing: 5px;
   font-weight: lighter;
 }
+@media (max-width: 500px) {
+  .main-content .top-content .text-content h2 {
+    font-size: 1rem;
+    text-align: left;
+  }
+}
 .main-content .downtown-sc-pic {
   max-width: 100%;
   width: 100%;
   height: 300px;
   margin-top: 50px;
+}
+@media (max-width: 500px) {
+  .main-content .downtown-sc-pic {
+    height: auto;
+    width: 94%;
+  }
 }
 .middle-content {
   margin-top: 20px;
@@ -225,11 +281,22 @@ body {
   margin: 25px 3% 15px 3%;
   box-shadow: 3px 4px;
 }
+@media (max-width: 500px) {
+  .middle-content .text-box {
+    height: auto;
+    width: 87%;
+  }
+}
 .middle-content .text-box p {
   font-size: 1.2rem;
   color: white;
   text-align: center;
   line-height: 1.8;
+}
+@media (max-width: 500px) {
+  .middle-content .text-box p {
+    font-size: 0.77rem;
+  }
 }
 .bottom-content {
   display: block;
@@ -264,4 +331,11 @@ footer {
   margin-top: 50px;
   padding-top: 20px;
   text-align: center;
+}
+@media (max-width) {
+  footer {
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+  }
 }

@@ -72,10 +72,6 @@ header {
 	width: 100%;
 	display: flex;
 	margin-bottom: 25px;
-	@media(max-width: 500px) {
-		text-align: center;
-		
-		}
 	}
 	nav {
 		width: 100%;
@@ -83,12 +79,24 @@ header {
 		margin-left: 55%;
 		display: flex;
 		justify-content: space-between;
+		@media(max-width: 500px) {
+			max-width: 500px;
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+			flex-direction: column;
+			align-items: center;
+		}
 		a {
 			width: 100%;
 			text-decoration: none;
 			font-size: @font-size;
 			color: black;
 			font-weight: bold;
+			@media(max-width: 500px) {
+				padding-bottom: 20px;
+				font-size: @h1-size;
+			}
 		}
 		a:hover {
 			text-decoration: underline;
@@ -100,6 +108,10 @@ header {
 	background-color: #5892ef;
 	width: 100%;
 	height: 100px;
+	@media (max-width: 500px) {
+		align-items: center;
+		max-width: 500px;
+	}
 	h1 {
 		color: white;
 		font-size: 4.5rem;
@@ -107,10 +119,16 @@ header {
 		letter-spacing: 12px;
 		font-weight: initial;
 		text-shadow: 4px 3px 0px black, 9px 8px 0px rgba(0,0,0,0.15);
+		@media (max-width: 500px) {
+			font-size: 3rem;
+		}
 	}
 }
 .main-content {
 	margin-top: 25px;
+	@media(max-width: 500px) {
+		width: 500px;
+	}
 	.top-content {
 		display: block;
 		text-align: end;
@@ -118,12 +136,21 @@ header {
 			float: left;
 			width: 200px;
 			height: auto;
+			@media (max-width: 500px) {
+				height: auto;
+				width: 150px;
+			}
 		}
 		.text-content {
+
 			h1 {
 				font-size: @h1-size;
 				color: #5892ef;
 				font-weight: bold;
+				@media (max-width: 500px) {
+				font-size: 1.5rem;
+				margin-right: 10%;
+				}
 			}
 			h2 {
 				margin-top: 25px;
@@ -131,6 +158,10 @@ header {
 				color: gray;
 				letter-spacing: 5px;
 				font-weight: lighter;
+				@media (max-width: 500px) {
+					font-size: 1rem;
+					text-align: left;
+				}
 			}
 		}
 	}
@@ -139,7 +170,11 @@ header {
 		width: 100%;
 		height: 300px;
 		margin-top: 50px;
-	}
+		@media (max-width: 500px) {
+			height: auto;
+			width: 94%;
+		}
+ 	}
 }
 .middle-content {
 	margin-top: 20px;
@@ -159,11 +194,18 @@ header {
 		padding: 0 5%;
 		margin: 25px 3% 15px 3%;
 		box-shadow: 3px 4px;
+		@media (max-width: 500px) {
+			height: auto;
+			width: 87%;
+		}
 		p {
 			font-size: 1.2rem;
 			color: white;
 			text-align: center;
 			line-height: 1.8;
+			@media(max-width: 500px) {
+				font-size: .77rem;
+			}
 		}
 	}
 }
@@ -202,4 +244,9 @@ footer {
 	margin-top: 50px;
 	padding-top: 20px;
 	text-align: center;
+	@media(max-width) {
+		text-align: center;
+		width: 100%;
+		max-width: 500px;
+	}
 }
