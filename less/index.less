@@ -54,6 +54,212 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
 }
 
+
+// My Code
+
+// Variables
+@font-size: 1.3rem;
+@h1-size: 2.5rem;
+@h2-size: 1.3rem;
+
+// Mixins
+.flex100() {
+	display: flex;
+	width: 100%;
+}
+.mw500() {
+	max-width: 500px;
+}
+
+
+.container {
+	width: 800px;
+	margin: 0 auto;
+header {
+	.flex100();
+	margin-bottom: 25px;
+	@media(max-width:500px) {
+		margin-left: 40px;
+	}
+	}
+	nav {
+		.flex100();
+		margin-top: 40px;
+		margin-left: 55%;
+		justify-content: space-between;
+		@media(max-width: 500px) {
+			.mw500();
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+			flex-direction: column;
+			align-items: center;
+		}
+		a {
+			width: 100%;
+			text-decoration: none;
+			font-size: @font-size;
+			color: black;
+			font-weight: bold;
+			@media(max-width: 500px) {
+				padding-bottom: 20px;
+				font-size: @h1-size;
+			}
+		}
+		a:hover {
+			text-decoration: underline;
+			color: lightskyblue;
+		}
+	}
+}
+.post-header {
+	background-color: #5892ef;
+	width: 100%;
+	height: 100px;
+	@media (max-width: 500px) {
+		align-items: center;
+		.mw500();
+	}
+	h1 {
+		color: white;
+		font-size: 4.5rem;
+		text-align: center;
+		letter-spacing: 12px;
+		font-weight: initial;
+		text-shadow: 4px 3px 0px black, 9px 8px 0px rgba(0,0,0,0.15);
+		@media (max-width: 500px) {
+			font-size: 3rem;
+			text-shadow: 2px 2px 0px black, 6px 4px 0px rgba(0,0,0,15);
+		}
+	}
+}
+.main-content {
+	margin-top: 25px;
+	@media(max-width: 500px) {
+		width: 500px;
+	}
+	.top-content {
+		display: block;
+		text-align: end;
+		.selfie {
+			float: left;
+			width: 200px;
+			height: auto;
+			@media (max-width: 500px) {
+				height: auto;
+				width: 150px;
+			}
+		}
+		.text-content {
+
+			h1 {
+				font-size: @h1-size;
+				color: #5892ef;
+				font-weight: bold;
+				@media (max-width: 500px) {
+				font-size: 1.5rem;
+				margin-right: 10%;
+				}
+			}
+			h2 {
+				margin-top: 25px;
+				font-size: @h2-size;
+				color: gray;
+				letter-spacing: 5px;
+				font-weight: lighter;
+				@media (max-width: 500px) {
+					font-size: 1rem;
+					text-align: left;
+				}
+			}
+		}
+	}
+	.downtown-sc-pic {
+		max-width: 100%;
+		width: 100%;
+		height: 300px;
+		margin-top: 50px;
+		@media (max-width: 500px) {
+			height: auto;
+			width: 94%;
+		}
+ 	}
+}
+.middle-content {
+	margin-top: 20px;
+	background: #5892ef;
+	max-width: 100%;
+	height: 230px; //changes the about me box size
+	h1 {
+		color: white;
+		font-size: 4.5rem;
+		text-align: center;
+		letter-spacing: 12px;
+		font-weight: initial;
+		text-shadow: 4px 3px 0px black, 9px 8px 0px rgba(0,0,0,0.15);
+	}
+	.text-box {
+		background: #8ab4f7;
+		padding: 0 5%;
+		margin: 25px 3% 15px 3%;
+		box-shadow: 3px 4px;
+		@media (max-width: 500px) {
+			height: auto;
+			width: 87%;
+		}
+		p {
+			font-size: 1.2rem;
+			color: white;
+			text-align: center;
+			line-height: 1.8;
+			@media(max-width: 500px) {
+				font-size: .77rem;
+			}
+		}
+	}
+}
+.bottom-content {
+	display: block;
+	h2 {
+		letter-spacing: 5px;
+		font-size: 2.3rem;
+		margin-bottom: 20px;
+	}
+	ul {
+		margin-left: 5%;
+		list-style: square;
+		font-size: 1.2rem;
+	}
+	
+}
+.contact {
+	margin: 50px 0 0 5%;
+	h4 {
+		font-size: @font-size;
+		letter-spacing: 4px;
+	}
+	p {
+		padding: 5px 0;
+		letter-spacing: 2px;
+	}
+}
+
+footer {
+	color: white;
+	font-size: @font-size - .5rem;
+	width: 100%;
+	height: 40px;
+	background: black;
+	margin-top: 50px;
+	padding-top: 20px;
+	text-align: center;
+	@media(max-width) {
+		text-align: center;
+		width: 100%;
+		max-width: 500px;
+	}
+}
